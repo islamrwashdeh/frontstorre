@@ -3,19 +3,19 @@ const initialState = {
     {
       name: "food",
       id: 1,
-      desc: "fresh types of new foods you can find thm only here"
+      desc: "fresh types of new foods you can find thm only here",
     },
     {
       name: "clothes",
       id: 2,
-      desc: "latest brands with best styles"
+      desc: "latest brands with best styles",
     },
     {
       name: "electronics",
       id: 3,
-      desc: "new versions and ltest technologies"
-    }
-  ]
+      desc: "new versions and ltest technologies",
+    },
+  ],
 };
 
 export default function catagories(state = initialState, action) {
@@ -34,13 +34,13 @@ export default function catagories(state = initialState, action) {
 
 export const getCatagories = () => {
   return {
-    type: "GET_CATAGORIES"
+    type: "GET_CATAGORIES",
   };
 };
 
 export const getActiveCatagory = (id) => {
   return {
     type: "GET_ACTIVE_CATAGORY",
-    payload: id
+    payload: id,
   };
 };
