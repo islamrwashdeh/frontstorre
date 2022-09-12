@@ -26,7 +26,7 @@ export default function cart(state = intitialState, action) {
       }
       return { ...state, items: newItems, totalPrice: totalPrice };
 
-    case "REMOVE_ITEM":
+    case "REMOVE_ITEM" :
       let newItems1 = [...state.items];
       let foundItem1 = newItems1.find((item) => {
         return item.id == action.payload;
